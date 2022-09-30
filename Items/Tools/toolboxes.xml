@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Override>
+    <Item name="" identifier="toolbox" category="Equipment" tags="smallitem,mobilecontainer,tool" cargocontaineridentifier="" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="" impactsoundtag="impact_metal_heavy" RequireAimToUse="True">
+      <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" amount="1" spawnprobability="0.05"/>
+      <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.1"/>
+      <Deconstruct time="10">
+        <Item identifier="steel" />
+      </Deconstruct>
+      <Fabricate suitablefabricators="fabricator" requiredtime="20">
+        <RequiredSkill identifier="mechanical" level="20" />
+        <Item identifier="steel" amount="2" />
+      </Fabricate>
+      <Price baseprice="60">
+        <Price storeidentifier="merchantoutpost" minavailable="1" />
+        <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="2" />
+        <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="1" />
+        <Price storeidentifier="merchantmilitary" multiplier="1.25" minavailable="1" />
+        <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="4" />
+      </Price>
+      <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,256,64,64" origin="0.5,0.6" />
+      <Sprite texture="Content/Items/Tools/tools.png" sourcerect="314,1,94,74" origin="0.5,0.5" depth="0.6" />
+      <Body width="90" height="60" density="20" />
+      <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,18" holdangle="90" reload="1" range="50" combatpriority="6" msg="ItemMsgPickUpSelect">
+        <Attack structuredamage="20" itemdamage="5" targetimpulse="2">
+          <Affliction identifier="blunttrauma" strength="2" />
+          <Affliction identifier="stun" strength="0.6" />
+          <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+        </Attack>
+      </MeleeWeapon>
+      <ItemContainer capacity="12" keepopenwhenequipped="true" movableframe="true">
+        <Containable items="smallitem" excludeditems="toolbelt,toolbox,mobilecontainer" />
+      </ItemContainer>
+      <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    </Item>
+  </Override>
+
+  <Item name="" identifier="oreostweaks.toolboxmilitary" category="Equipment" tags="smallitem,mobilecontainer,tool" cargocontaineridentifier="" showcontentsintooltip="true" scale="0.5" fireproof="true" description="" impactsoundtag="impact_metal_heavy" reguireaimtouse="true">
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="20" />
+      <Item identifier="steel" amount="2" />
+    </Fabricate>
+    <Price baseprice="60">
+      <Price storeidentifier="merchantoutpost" sold="false"/>
+      <Price storeidentifier="merchantcity" multiplier="0.25"/>
+      <Price storeidentifier="merchantresearch" multiplier="0.25"/>
+      <Price storeidentifier="merchantmilitary" multiplier="1.25" minavailable="2"/>
+      <Price storeidentifier="merchantmine" multiplier="0.25"/>
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/Icons/toolboxiconatlas.png" sourcerect="0,0,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/Items/Tools/toolboxes.png" sourcerect="0,0,94,74" origin="0.5,0.5" depth="0.6" />
+    <Body width="90" height="60" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,18" holdangle="90" reload="1" range="50" combatpriorty="6" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="20" itemdamage="5" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Affliction identifier="stun" strength="0.6"/>
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="12" keepopenwhenequipped="true" movableframe="true">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,mobilecontainer" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+  </Item>
+
+  <Item name="" identifier="oreostweaks.toolboxmedical" category="Equipment" tags="smallitem,mobilecontainer,tool" cargocontaineridentifier="" showcontentsintooltip="true" scale="0.5" fireproof="true" description="" impactsoundtag="impact_metal_heavy" reguireaimtouse="true">
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="20" />
+      <Item identifier="steel" amount="2" />
+    </Fabricate>
+    <Price baseprice="60">
+      <Price storeidentifier="merchantoutpost" multiplier="0.1"/>
+      <Price storeidentifier="merchantcity" multiplier="0.85"/>
+      <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="2"/>
+      <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1"/>
+      <Price storeidentifier="merchantmine" multiplier="0.5" minavailable="1"/>
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/Icons/toolboxiconatlas.png" sourcerect="64,0,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/Items/Tools/toolboxes.png" sourcerect="94,0,94,74" origin="0.5,0.5" depth="0.6" />
+    <Body width="90" height="60" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,18" holdangle="90" reload="1" range="50" combatpriorty="6" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="20" itemdamage="5" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Affliction identifier="stun" strength="0.6"/>
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="12" keepopenwhenequipped="true" movableframe="true">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,mobilecontainer" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+  </Item>
+</Items>

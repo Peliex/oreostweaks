@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <infotexts language="English" nowhitespace="false" translatedname="English">
   <entityname.oreostweaks.smallchargername>Small Charging Dock</entityname.oreostweaks.smallchargername>
+
+  <entityname.oreostweaks.toolboxmilitary>Military Storage Container</entityname.oreostweaks.toolboxmilitary>
+  <entityname.oreostweaks.toolboxmedical>Medical Storage Container</entityname.oreostweaks.toolboxmedical>
 </infotexts>
