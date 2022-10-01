@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Oreo's Tweaks and Items" modversion="1.0.0" corepackage="False" gameversion="0.18.15.1">
+<contentpackage name="Oreo's Tweaks and Items" modversion="1.0.1" corepackage="False" steamworkshopid="2869787418" gameversion="0.18.15.1">
   <Item file="%ModDir%/Items/Electricity/batterydock.xml" />
   <Item file="%ModDir%/Items/Tools/toolboxes.xml" />
   <Text file="%ModDir%/Texts/English/oreosenglish.xml" />
