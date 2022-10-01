@@ -97,4 +97,66 @@
     </ItemContainer>
     <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
   </Item>
+
+  <Item name="" identifier="oreostweaks.toolboxhazmat" category="Equipment" tags="smallitem,mobilecontainer,tool" cargocontaineridentifier="" showcontentsintooltip="true" scale="0.5" fireproof="true" description="" impactsoundtag="impact_metal_heavy" reguireaimtouse="true">
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="20" />
+      <Item identifier="steel" amount="2" />
+    </Fabricate>
+    <Price baseprice="60">
+      <Price storeidentifier="merchantoutpost" sold="false"/>
+      <Price storeidentifier="merchantcity" multiplier="0.85"/>
+      <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="1"/>
+      <Price storeidentifier="merchantmilitary" multiplier="0.5"/>
+      <Price storeidentifier="merchantmine" multiplier="1.25" minavailable="2"/>
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/Icons/toolboxiconatlas.png" sourcerect="128,0,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/Items/Tools/toolboxes.png" sourcerect="188,0,94,74" origin="0.5,0.5" depth="0.6" />
+    <Body width="90" height="60" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,18" holdangle="90" reload="1" range="50" combatpriorty="6" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="20" itemdamage="5" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Affliction identifier="stun" strength="0.6"/>
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="12" keepopenwhenequipped="true" movableframe="true">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,mobilecontainer" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+  </Item>
+
+  <Item name="" identifier="oreostweaks.toolboxresource" category="Equipment" tags="smallitem,mobilecontainer,tool" cargocontaineridentifier="" showcontentsintooltip="true" scale="0.5" fireproof="true" description="" impactsoundtag="impact_metal_heavy" reguireaimtouse="true">
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="20" />
+      <Item identifier="steel" amount="2" />
+    </Fabricate>
+    <Price baseprice="60">
+      <Price storeidentifier="merchantoutpost" multiplier="0.35"/>
+      <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1"/>
+      <Price storeidentifier="merchantresearch" multiplier="0.7"/>
+      <Price storeidentifier="merchantmilitary" multiplier="0.5"/>
+      <Price storeidentifier="merchantmine" multiplier="1.15" minavailable="2"/>
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/Icons/toolboxiconatlas.png" sourcerect="192,0,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/Items/Tools/toolboxes.png" sourcerect="282,0,94,74" origin="0.5,0.5" depth="0.6" />
+    <Body width="90" height="60" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,18" holdangle="90" reload="1" range="50" combatpriorty="6" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="20" itemdamage="5" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Affliction identifier="stun" strength="0.6"/>
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="12" keepopenwhenequipped="true" movableframe="true">
+      <Containable items="smallitem" excludeditems="toolbelt,toolbox,mobilecontainer" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+  </Item>
 </Items>

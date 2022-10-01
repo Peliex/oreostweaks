@@ -4,4 +4,6 @@
 
   <entityname.oreostweaks.toolboxmilitary>Military Storage Container</entityname.oreostweaks.toolboxmilitary>
   <entityname.oreostweaks.toolboxmedical>Medical Storage Container</entityname.oreostweaks.toolboxmedical>
+  <entityname.oreostweaks.toolboxhazmat>Hazmat Storage Container</entityname.oreostweaks.toolboxhazmat>
+  <entityname.oreostweaks.toolboxresource>Resource Storage Container</entityname.oreostweaks.toolboxresource>
 </infotexts>
