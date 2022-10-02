@@ -13,6 +13,7 @@
     <Deconstruct time="15">
       <Item identifier="tin" />
       <Item identifier="copper" />
+      <Item identifier="plastic" />
       <Item identifier="fpgacircuit" />
     </Deconstruct>
     <Fabricate suitablefabricators="fabricator" requiredtime="30">
