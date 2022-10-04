@@ -6,5 +6,6 @@
     "[json]":
     {
         "editor.tabSize": 4
-    }
+    },
+    "Lua.diagnostics.disable": ["undefined-global"]
 }
