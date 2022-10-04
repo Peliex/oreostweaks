@@ -2,6 +2,11 @@
 
 A repository containing the source and tools used to develop my mods for the game Barotrauma
 
+# Dependencies
+
+This mod now requires [Lua for Barotrauma](https://steamcommunity.com/workshop/filedetails/?id=2559634234)<br>
+Detailed installation can be found on the workshop page, or you can install the source code yourself from [GitHub](https://github.com/evilfactory/LuaCsForBarotrauma/).
+
 # Steam Workshop
 
 [Workshop Page](https://steamcommunity.com/sharedfiles/filedetails/?id=2869787418)<br>
